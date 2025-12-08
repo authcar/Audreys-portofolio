@@ -20,7 +20,7 @@ function Heading({ tag }: HeadingProps) {
           </h1>
         </>
       ) : (
-        <h1 className="text-4xl sm:text-6xl inline-block w-auto mx-auto mb-8 relative">
+        <h1 className=" font-playwrite text-4xl sm:text-6xl inline-block w-auto mx-auto mb-8 relative">
           Projects
           <img
             className="sqD w-10 -top-8 -right-8 absolute"

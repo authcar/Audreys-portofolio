@@ -15,7 +15,7 @@ const projects: Project[] = [
     id: 1,
     title: "SLIKA PhotoBooth",
     desc: "Interactive online photobooth website with early 2000s game aesthetic.",
-    img: "/static/projects/buildfaster.png",
+    img: "/static/projects/slika.png",
     github: "https://github.com/authcar/SLIKA",
     tags: ["Javascript", "HTML", "CSS"],
   },
@@ -31,7 +31,7 @@ const projects: Project[] = [
     id: 3,
     title: "Audrey's Inventory",
     desc: "A simple CRUD inventory management system built with PHP and MySQL",
-    img: "/static/projects/bitcointemp.png",
+    img: "/static/projects/audreysinvetory.png",
     github: "https://github.com/authcar/AudreysInventory",
     tags: ["PHP", "Blade"],
   },
@@ -39,7 +39,7 @@ const projects: Project[] = [
     id: 4,
     title: "Movie Recommendation System",
     desc: "",
-    img: "/static/projects/create-html-boilerplate.png",
+    img: "/static/projects/madmovies.png",
     github: "https://github.com/authcar/movie-recommendation",
     tags: ["TypeScript", "Javascript", "HTML", "CSS"],
   },
@@ -53,14 +53,12 @@ const projects: Project[] = [
   },
 ];
 
-export const allTags = []
+export const allTags = [];
 
 projects.forEach((project) => {
-  project.tags.forEach((tag) => !allTags.includes(tag) && allTags.push(tag))
+  project.tags.forEach((tag) => !allTags.includes(tag) && allTags.push(tag));
 });
 
-export const allKebabTags = allTags.map(tag => (
-  kebabCase(tag)
-))
+export const allKebabTags = allTags.map((tag) => kebabCase(tag));
 
-export default projects
+export default projects;

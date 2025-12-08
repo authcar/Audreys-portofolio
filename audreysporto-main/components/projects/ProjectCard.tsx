@@ -12,7 +12,7 @@ function ProjectCard({ project }) {
       <a
         href={project.link || project.github}
         target="_blank"
-        className={`w-full relative rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-fun-pink will-change-projectCard`}
+        className={`w-full relative rounded-xl border-fun-gray border p-2 transition hover:-translate-y-2 hover:opacity-75 hover:border-medium-pink will-change-projectCard`}
       >
         <img
           className="w-full rounded-md"
@@ -53,7 +53,7 @@ function ProjectCard({ project }) {
             return (
               <li key={tag}>
                 <Link href={`/projects/tag/${kebabCase(tag)}`}>
-                  <div className="m-1 rounded-lg text-sm bg-fun-pink-dark py-1 px-2 cursor-pointer hover:opacity-75">
+                  <div className="m-1 rounded-lg text-sm bg-dark-pink py-1 px-2 cursor-pointer hover:opacity-75">
                     {tag}
                   </div>
                 </Link>

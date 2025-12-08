@@ -6,8 +6,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ["Oxanium", "Inter", "system-ui", "sans"],
-      monospace: ["Kumbh Sans", "monospace"],
+      sans: ["Libre Baskerville", "serif"],
+      playwrite: ['"Playwrite NO"', "cursive"],
     },
     colors: {
       black: colors.black,
@@ -25,18 +25,21 @@ module.exports = {
     extend: {
       colors: {
         //warna kustom
-        bg: "#ffc0db",
-        "fun-gray-light": "#b2bbcf",
+        bg: "#FDFDF5",
         "fun-gray": "#7b89a8",
         "fun-gray-medium": "#767c85",
         "fun-gray-darker": "#2a2a2c",
         "fun-gray-dark": "#1F1F20",
         "fun-gray-darkest": "#141414",
-        "fun-pink": "#00c7ff",
-        "fun-pink-darker": "#000f2e",
-        "fun-pink-darkest": "#000c24",
-        "fun-pink-dark": "#192742",
-        "fun-pink-light": "#009ac5",
+        beige: "#ece3d2",
+        "medium-pink": "#f4c7d0",
+        "dark-pink": "#c66f80",
+        "medium-green": "#9faa74",
+        "dark-green": "#4a6644",
+        "light-pink": "#fcebf1",
+        "fun-pink-darker": "#4a6644",
+        "fun-pink-darkest": "#c66f80",
+        "fun-pink-light": "#f4c7d0",
       },
       rotate: {
         360: "360deg",

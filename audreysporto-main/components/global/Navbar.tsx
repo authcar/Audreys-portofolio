@@ -5,7 +5,7 @@ import { routes } from "@/data/global";
 function Navbar({ currentPage }) {
   return (
     <nav className="flex items-center justify-between">
-      <li className="list-none font-bold text-lg cursor-pointer">
+      <li className="list-none font-bold text-lg cursor-pointer pb-6">
         <Link href="/">
           <span className="font-black text-xl flex items-center">
             <img
@@ -21,6 +21,7 @@ function Navbar({ currentPage }) {
                     animationDelay: `${index * 0.15}s`,
                   }}
                   className="
+                    font-playwrite
                     relative
                     inline-block                 
                     hover:animate-[wave_1.4s_ease-in-out_infinite]
@@ -43,7 +44,7 @@ function Navbar({ currentPage }) {
           return (
             <li
               key={index}
-              className={`list-none text-white ${
+              className={`list-none text-dark-green  ${
                 currentPage === item.title
                   ? "opacity-100" //jika halaman saat ini, opacity penuh
                   : "opacity-40 hover:opacity-100 transition-opacity"
