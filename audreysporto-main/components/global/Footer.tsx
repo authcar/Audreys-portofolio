@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { Github } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 
 const footer = {
   columns: [
@@ -16,9 +17,9 @@ const footer = {
     {
       title: "Connect",
       links: [
-        { name: "GitHub", link: "https://github.com/authcar", leavesWebsite: true, icon: "/github.svg" },
-        { name: "LinkedIn", link: "https://linkedin.com", leavesWebsite: true, icon: "/linkedin.svg" },
-        { name: "Email", link: "mailto:authcar@gmail.com", leavesWebsite: true, icon: "/email.svg" },
+        { name: "GitHub", link: "https://github.com/authcar", leavesWebsite: true, icon: Github },
+        { name: "LinkedIn", link: "https://www.linkedin.com/in/audrey-theresia/", leavesWebsite: true, icon: Linkedin },
+        { name: "Email", link: "mailto:authcar@gmail.com", leavesWebsite: true, icon: Mail },
       ]
     }
   ]
@@ -26,11 +27,11 @@ const footer = {
 
 function Footer() {
   return (
-    <footer className="relative w-screen bg-beige">
+    <footer className="relative w-screen bg-beige ">
       {/* Decorative top wave */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
-        <svg className="relative block w-full h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-bg"></path>
+        <svg className="relative block w-full h-12 animate-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-bg"></path>
         </svg>
       </div>
 
@@ -39,7 +40,7 @@ function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {footer.columns.map((column, index) => (
             <div key={index} className="space-y-4">
-              <h4 className="text-medium-pink font-bold text-sm uppercase tracking-wider">
+              <h4 className="text-dark-pink font-bold text-sm uppercase tracking-wider">
                 {column.title}
               </h4>
               <ul className="space-y-3">
@@ -50,19 +51,24 @@ function Footer() {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-fun-gray hover:text-medium-pink transition-colors duration-200 group"
+                        className="flex items-center text-medium-green hover:text-dark-pink transition-colors duration-200 group"
                       >
                         {item.icon && (
                           <span className="mr-2 opacity-70 group-hover:opacity-100 transition-opacity">
-                            <Image src={item.icon} width={16} height={16} alt="" />
+                            {typeof item.icon === "string" ? (
+                              <Image src={item.icon} width={16} height={16} alt="" />
+                            ) : (
+                              <item.icon className="w-4 h-4" />
+                            )}
                           </span>
                         )}
+
                         <span className="text-sm">{item.name}</span>
                       </a>
                     ) : (
                       <Link 
                         href={item.link}
-                        className="text-sm text-fun-gray hover:text-medium-pink transition-colors duration-200"
+                        className="text-sm text-medium-green hover:text-dark-pink transition-colors duration-200"
                       >
                         {item.name}
                       </Link>
@@ -113,12 +119,7 @@ function Footer() {
       </div>
 
       {/* Decorative background dots */}
-      <div className="absolute bottom-0 left-0 w-full h-32 opacity-5 pointer-events-none">
-        <div className="w-2 h-2 bg-medium-pink rounded-full absolute bottom-10 left-[10%] animate-pulse"></div>
-        <div className="w-3 h-3 bg-medium-pink rounded-full absolute bottom-20 left-[30%] animate-pulse" style={{animationDelay: '0.5s'}}></div>
-        <div className="w-2 h-2 bg-medium-pink rounded-full absolute bottom-16 right-[20%] animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="w-3 h-3 bg-medium-pink rounded-full absolute bottom-8 right-[40%] animate-pulse" style={{animationDelay: '1.5s'}}></div>
-      </div>
+      
     </footer>
   );
 }

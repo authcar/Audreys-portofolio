@@ -22,6 +22,7 @@ module.exports = {
       purple: colors.purple,
       pink: colors.pink,
     },
+
     extend: {
       colors: {
         //warna kustom
@@ -44,14 +45,21 @@ module.exports = {
       rotate: {
         360: "360deg",
       },
+
+      animation: {
+        wave: "wave 2s ease-in-out infinite",
+        fadeInAndBounce: "fadeIn 3s ease-out",
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
-      },
-      animation: {
-        fadeInAndBounce: "fadeIn 3s ease-out",
+        wave: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-25px)" },
+          "100%": { transform: "translateX(0)" },
+        },
       },
       willChange: {
         projectCard: "border-color, opacity, transform",
