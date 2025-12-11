@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedBlob from "../designs/blob";
 
 function CTA() {
   return (
@@ -8,13 +9,17 @@ function CTA() {
         <h2 className="text-4xl md:text-5xl font-bold mb-10">
           Let's Keep in Touch!
         </h2>
-        <a
-          href="mailto:authcar@gmail.com?subject=Hello%20Audrey"
-          className="cursor-pointer font-bold whitespace-nowrap 
-        mt-6 px-8 py-3 text-white border-2 rounded-full border-white bg-bg hover:bg-medium-pink hover:border-medium-pink transition-colors"
-        >
-          Get in Touch
-        </a>
+        <AnimatedBlob
+                size={200}
+                variant="mediumPink"
+                className="top-10 left-20"
+        />
+        <AnimatedBlob
+        size={260}
+        variant="lightGreen"
+        className="bottom-5 right-10"
+        delay={-4}
+        />
       </div>
 
      

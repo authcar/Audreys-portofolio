@@ -20,7 +20,7 @@ function Projects() {
       </div>
       <div className="relative w-full mt-2">
         <Link href="/projects">
-          <div className="mt-8 max-w-sm md:max-w-2xl border border-medium-pink mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-medium-pink bg-fun-pink-darkerer hover:bg-medium-pink hover:text-white transition-colors cursor-pointer">
+          <div className="mt-8 max-w-sm md:max-w-2xl border border-medium-green mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-medium-green bg-fun-pink-darkerer hover:bg-light-pink hover:text-medium-green transition-colors cursor-pointer">
             View All
           </div>
         </Link>

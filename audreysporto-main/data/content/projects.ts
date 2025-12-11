@@ -5,11 +5,11 @@ const projects: Project[] = [
   {
     id: 0,
     title: "Ruang Dosen",
-    desc: "Web-based Academic Information System (SIA) prototype designed specifically for lecturers (-⊙⩊⊙)𝇌 ✎",
+    desc: "Web-based Academic Information System (SIA) prototype designed specifically for lecturers",
     img: "/static/projects/ruangdosen.png",
     link: "https://ruangdosen.space/",
     github: "https://github.com/authcar/Ruang-Dosen",
-    tags: ["TypeScript", "JavaScript", "CSS"],
+    tags: ["TypeScript", "JavaScript", "HTML","CSS"],
   },
   {
     id: 1,
@@ -21,14 +21,6 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Tsuki-Menstrual Cycle Tracker",
-    desc: "Women's Cycle Tracker",
-    img: "/static/projects/react-emoji-search.png",
-    github: "https://github.com/authcar/Period-tracking",
-    tags: ["Dart"],
-  },
-  {
-    id: 3,
     title: "Audrey's Inventory",
     desc: "A simple CRUD inventory management system built with PHP and MySQL",
     img: "/static/projects/audreysinvetory.png",
@@ -36,7 +28,7 @@ const projects: Project[] = [
     tags: ["PHP", "Blade"],
   },
   {
-    id: 4,
+    id: 3,
     title: "Movie Recommendation System",
     desc: "",
     img: "/static/projects/madmovies.png",
@@ -44,12 +36,20 @@ const projects: Project[] = [
     tags: ["TypeScript", "Javascript", "HTML", "CSS"],
   },
   {
+    id: 4,
+    title: "Tsuki",
+    desc: "Menstrual Cycle Tracker",
+    img: "/static/projects/tsuki.png",
+    github: "https://github.com/authcar/Period-tracking",
+    tags: ["Dart"],
+  },
+  {
     id: 5,
-    title: "8 Ball in your CLI",
-    desc: "An 8 ball simulation in your CLI built with Rust!",
-    img: "/static/projects/8ball-rust.png",
-    github: "https://github.com/BraydenTW/8ball-rust",
-    tags: ["Rust", "CLI", "Game"],
+    title: "More to come!",
+    desc: "The chef is cooking..",
+    img: "",
+    github: "",
+    tags: ["?"],
   },
 ];
 

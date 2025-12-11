@@ -13,7 +13,7 @@ type ProjectProps = {
 function Projects({ overwriteProjects }: ProjectProps) {
   const projectsList = overwriteProjects ? overwriteProjects : projects;
   return (
-    <div className="grid grid-cols-1 gap-8 md:grid-cols-3 items-start">
+    <div className=" grid grid-cols-1 gap-8 mb-10 gap-y-9 md:grid-cols-3 items-start">
       {projectsList.map((item) => {
         return <ProjectCard key={item.id} project={item} />;
       })}
