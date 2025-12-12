@@ -22,10 +22,13 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
-      - name: Build with Next.js
+      - name: Build Next.js
         run: npm run build
+
+      - name: Export static site
+        run: npm run export
 
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
@@ -38,6 +41,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
