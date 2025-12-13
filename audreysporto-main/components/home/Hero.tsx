@@ -7,8 +7,8 @@ import { Clover } from "lucide-react";
 function Hero() {
   return (
     <div
-      className="relative heroElem w-full  pb-40 m-auto flex justify-center text-center 
-          flex-col items-center z-1 
+      className="relative heroElem w-full min-h-screen m-auto flex justify-center text-center 
+          flex-col items-center z-10 
           bg-[url('/static/strawberry.jpg')] bg-cover bg-center bg-no-repeat 
         "
     >
