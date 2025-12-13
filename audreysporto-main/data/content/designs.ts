@@ -4,7 +4,7 @@ type Design = {
 
 export const designs: Design[] = [
   {
-    img: "/static/profile/mukagweh.jpg"
+    img: "/static/profile/mukagweh.JPG"
   },
   {
     img: "/static/profile/sims.png"
