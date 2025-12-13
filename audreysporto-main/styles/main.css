@@ -5,13 +5,13 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  
+  max-width: 100%;
+
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 
@@ -173,8 +173,6 @@ main {
 
 .heroElem {
   width: 100vw;
-  min-height: 100vh;
-  height: 100vh;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   animation: blurIn 1.5s ease-in-out;

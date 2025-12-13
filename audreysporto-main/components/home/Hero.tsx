@@ -7,7 +7,7 @@ import { Clover } from "lucide-react";
 function Hero() {
   return (
     <div
-      className="relative heroElem w-full h-screen overflow-x-hidden flex justify-center text-center 
+      className="relative heroElem w-full min-h-screen overflow-x-hidden flex justify-center text-center 
           flex-col items-center z-10 
         "
     >
