@@ -32,7 +32,7 @@ function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 py-20">
+      <div className="relative z-10 flex flex-col items-center text-center py-20">
         {/* Subtitle */}
         <div
           className="mb-6 animate-fade-in opacity-0"
