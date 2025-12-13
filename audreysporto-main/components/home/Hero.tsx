@@ -8,8 +8,13 @@ function Hero() {
   return (
     <div
       className="relative heroElem w-full min-h-screen overflow-x-hidden flex justify-center text-center 
-          flex-col items-center z-10 
-        "
+          flex-col items-center z-10 "
+         style={{ 
+          marginLeft: 'calc(-50vw + 50%)',
+          marginRight: 'calc(-50vw + 50%)',
+          width: '100vw',
+          maxWidth: '100vw'
+        }}
     >
       {/* Background with overlay */}
       <div
