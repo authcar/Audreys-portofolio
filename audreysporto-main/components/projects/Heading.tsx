@@ -22,7 +22,7 @@ function Heading({ tag }: HeadingProps) {
       )}
       {!tag && (
         <p className="text-fun-gray text-xl sm:text-2xl max-w-3xl m-auto">
-          I've built websites using anything from HTML to PHP! Here are some of my favorite projects 
+          I've built websites using anything from Typescript to PHP! Here are some of my favorite projects 
         </p>
       )}
     </div>

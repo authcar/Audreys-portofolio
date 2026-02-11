@@ -78,7 +78,7 @@ function Hero() {
           className="text-medium-pink text-lg md:text-xl max-w-2xl mb-12 leading-relaxed animate-fade-in opacity-0 "
           style={{ animation: "fadeIn 0.8s ease-out 0.8s forwards" }}
         >
-          and making websites too hehe
+          and making websites too!
         </p>
 
         {/* CTA Button */}

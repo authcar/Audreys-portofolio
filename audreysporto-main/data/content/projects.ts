@@ -19,13 +19,13 @@ const projects: Project[] = [
     github: "https://github.com/authcar/SLIKA",
     tags: ["Javascript", "HTML", "CSS"],
   },
-  {
+ {
     id: 2,
-    title: "Audrey's Inventory",
-    desc: "A simple CRUD inventory management system built with PHP and MySQL",
-    img: "/static/projects/audreysinvetory.png",
-    github: "https://github.com/authcar/AudreysInventory",
-    tags: ["PHP", "Blade"],
+    title: "Tsuki",
+    desc: "Menstrual Cycle Tracker",
+    img: "/static/projects/tsuki.png",
+    github: "https://github.com/authcar/Period-tracking",
+    tags: ["Dart", "Flutter"],
   },
   {
     id: 3,
@@ -37,11 +37,11 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Tsuki",
-    desc: "Menstrual Cycle Tracker",
-    img: "/static/projects/tsuki.png",
-    github: "https://github.com/authcar/Period-tracking",
-    tags: ["Dart"],
+    title: "Audrey's Inventory",
+    desc: "A simple CRUD inventory management system built with PHP and MySQL",
+    img: "/static/projects/audreysinvetory.png",
+    github: "https://github.com/authcar/AudreysInventory",
+    tags: ["PHP", "Blade"],
   },
   {
     id: 5,
