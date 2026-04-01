@@ -42,16 +42,12 @@ const footer = {
 function Footer() {
   return (
     <footer className="relative w-full overflow-hidden bg-gradient-to-br from-beige via-beige to-fun-pink-darker/5">
-      {/* Animated decorative elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-dark-pink/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-medium-green/10 rounded-full blur-3xl animate-pulse delay-700"></div>
-      </div>
+
 
       {/* Decorative top wave */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
         <svg
-          className="relative block w-full h-12 md:h-16 animate-wave"
+          className="relative block w-full h-12 md:h-16"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
