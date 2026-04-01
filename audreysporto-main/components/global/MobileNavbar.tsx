@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 
 import Link from "next/link";
-import {routes} from "@/data/global";
+import { routes } from "@/data/global";
 import useDelayedRender from "@/hooks/useDelayedRender";
-
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +11,7 @@ export default function MobileNavbar() {
     {
       enterDelay: 20,
       exitDelay: 300,
-    }
+    },
   );
 
   function toggleMenu() {
@@ -34,16 +33,12 @@ export default function MobileNavbar() {
   return (
     <nav>
       <div
-        className={`w-full justify-between flex items-center ${isMenuRendered && 'bg-bg'} p-5`}
+        className={`w-full justify-between flex items-center ${isMenuRendered && "bg-bg"} p-5`}
         style={{ zIndex: 101 }}
       >
         <li className="list-none font-bold text-lg">
           <Link href="/">
-            <img
-              className="mr-3"
-              src="/static/logos/logo_full.svg"
-              width="160"
-            />
+            <img className="mr-3" src="/static/logos/snoopy.svg" width="160" />
           </Link>
         </li>
         <button

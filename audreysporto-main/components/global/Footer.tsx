@@ -41,7 +41,7 @@ const footer = {
 
 function Footer() {
   return (
-    <footer className="relative w-screen overflow-hidden bg-gradient-to-br from-beige via-beige to-fun-pink-darker/5">
+    <footer className="relative w-full overflow-hidden bg-gradient-to-br from-beige via-beige to-fun-pink-darker/5">
       {/* Animated decorative elements */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-10 left-10 w-32 h-32 bg-dark-pink/10 rounded-full blur-3xl animate-pulse"></div>
@@ -149,7 +149,6 @@ function Footer() {
             <span>View Source Code</span>
           </a>
         </div>
-        
       </div>
 
       {/* Bottom gradient fade */}
